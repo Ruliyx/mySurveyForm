@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>My Survery Form</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="title"> Sate of Health Survey Form</h1>
+        <p id="description"> Thank you for taking the time to fill in this form, and keep healthy</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <label for="name" name="name" id="name-label">  Name </label><br>
+                <input type="text" id="name" placeholder="Name" required><br>
+
+            <label for="email" name="email" id="email-label"> Email </label><br>
+                <input type="email" id="email" placeholder="email" required><br>
+
+            <label for="number" name="number" id="number-label"> Age </label><br>
+                <input type="number" id="number" min="16" max="80"placeholder="Age"><br>
+
+            <label for="dropdown">This is a placeholder question</label><br>
+                <select name="dropdown" id="dropdown">
+                    <option value="">sd</option>
+                    <option value="">sda</option>
+                    <option value="">ada</option>
+                </select><br>
+
+            <label for="">This is a placeholder question</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+
+            <label for="">This is a placeholder question</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br>
+
+            <label for="textarea">This is a placeholder question</label><br>
+            <textarea name="textarea" placeholder="Enter your comment here..."></textarea><br>
+
+            <input type="submit" value="submit" id="submit">
+
+        </form>
+    </main>
+
+</body>
+</html>

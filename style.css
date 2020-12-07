@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    padding:0;
+}
+
