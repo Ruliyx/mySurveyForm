@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>My Survery Form</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,41 +17,81 @@
 
     <main>
         <form id="survey-form">
-            <label for="name" name="name" id="name-label">  Name </label><br>
-                <input type="text" id="name" placeholder="Name" required><br>
 
-            <label for="email" name="email" id="email-label"> Email </label><br>
-                <input type="email" id="email" placeholder="email" required><br>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name" name="name" id="name-label">  Name </label><br>
+                <input type="text" id="name" placeholder="Enter your Name" required><br>
+            </div>
 
-            <label for="number" name="number" id="number-label"> Age </label><br>
-                <input type="number" id="number" min="16" max="80"placeholder="Age"><br>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email" name="email" id="email-label"> Email </label><br>
+                <input type="email" id="email" placeholder="Enter your Email" required><br>
+            </div>
 
-            <label for="dropdown">This is a placeholder question</label><br>
-                <select name="dropdown" id="dropdown">
-                    <option value="">sd</option>
-                    <option value="">sda</option>
-                    <option value="">ada</option>
+            <!-- Age -->
+            <div class="form-group">
+                <label for="number" name="number" id="number-label"> Age </label><br>
+                <input type="number" id="number" min="16" max="80"placeholder="Enter your Age"><br>
+            </div>
+
+            <!-- Drop Down #1 -->
+            <div class="form-group">
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="dropdown">
+                    <option value="" disabled selected>Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
                 </select><br>
+            </div>
 
-            <label for="">This is a placeholder question</label><br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label><br>
+            <!-- Checkbox #1 -->
+            <div class="form-group">
+                <p>Have you experianced any of the following symptoms over the last week?</p><br>
+                    <input type="checkbox" id="symtom1" name="symtom1" value="fever">
+                    <label for="symtom1"> Fever</label><br>
 
-            <label for="">This is a placeholder question</label><br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> I have a boat</label><br>
+                    <input type="checkbox" id="symtom2" name="symtom2" value="dry-cough">
+                    <label for="symtom2"> Dry Cough</label><br>
 
-            <label for="textarea">This is a placeholder question</label><br>
-            <textarea name="textarea" placeholder="Enter your comment here..."></textarea><br>
+                    <input type="checkbox" id="symtom3" name="symtom3" value="tiredness">
+                    <label for="symtom3"> Tiredness</label><br>
 
+                    <input type="checkbox" id="symtom4" name="symtom4" value="diarrhoea">
+                    <label for="symtom4"> Diarrhoea</label><br>
+
+                    <input type="checkbox" id="symtom5" name="symtom5" value="headache">
+                    <label for="symtom5"> Headache</label><br>
+            </div>
+
+            <!-- Radio #1 -->
+            <div class="form-group"> 
+                <p>Did you or any of your family members contract Covid-19?</p><br>
+                    <input type="radio" id="opt1" name="haveCovid" value="no">
+                    <label for="opt1">No</label><br>
+
+                    <input type="radio" id="opt2" name="haveCovid" value="yesOM">
+                    <label for="opt2">Yes(Only Me)</label><br>
+
+                    <input type="radio" id="opt3" name="haveCovid" value="yesOMF">
+                    <label for="opt3">Yes(Only my family)</label><br>
+
+                    <input type="radio" id="opt4" name="haveCovid" value="yesAOU">
+                    <label for="opt4">Yes(All of us)</label><br>
+
+                    <input type="radio" id="opt5" name="haveCovid" value="noOMF">
+                    <label for="opt5">No(Only my family)</label><br>
+            </div>
+
+            <!-- Textarea #1 -->
+            <div class="form-group">
+                <p>Any feedback or questions can be ask in the textarea below</p><br>
+                <textarea name="textarea" placeholder="Enter your comment here..."></textarea><br>
+            </div>
+
+            <!-- Submit -->
             <input type="submit" value="submit" id="submit">
 
         </form>
